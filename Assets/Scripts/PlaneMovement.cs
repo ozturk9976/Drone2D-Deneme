@@ -58,23 +58,23 @@ public class PlaneMovement : MonoBehaviour
                 //     position.x--;
                 //     this.transform.position = position;
                 //   }
-                  if (Input.GetKey(KeyCode.RightArrow))
-                  {
-                         Vector2 position = this.transform.position;
-                         position.x++;
-                          this.transform.position = position;
-                  }
-                  if (Input.GetKey(KeyCode.UpArrow))
-                  {
-                          Vector2 position = this.transform.position;
-                          position.y++;
-                          this.transform.position = position;
-                  }
-                  if (Input.GetKey(KeyCode.DownArrow))
-                  {
-                          Vector2 position = this.transform.position;
-                          position.y--;
-                          this.transform.position = position;
+                    if (Input.GetKey(KeyCode.RightArrow))
+                    {
+                            Vector2 position = this.transform.position;
+                            position.x++;
+                            this.transform.position = position;
+                    }
+                    if (Input.GetKey(KeyCode.UpArrow))
+                    {
+                            Vector2 position = this.transform.position;
+                            position.y++;
+                            this.transform.position = position;
+                    }
+                    if (Input.GetKey(KeyCode.DownArrow))
+                    {
+                            Vector2 position = this.transform.position;
+                            position.y--;
+                            this.transform.position = position;
         }
    
    
