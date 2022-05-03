@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//vektörel harekette impulse kullanılır
 public class PlaneMovement : MonoBehaviour
 {
    
@@ -10,9 +11,11 @@ public class PlaneMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
     void Update()
     {
+        
         //  if (Input.GetButton("Jump"))
         //  {
         //     rb.AddForce(transform.right * moveSpeed * Time.deltaTime);
@@ -58,27 +61,29 @@ public class PlaneMovement : MonoBehaviour
                 //     position.x--;
                 //     this.transform.position = position;
                 //   }
-                    if (Input.GetKey(KeyCode.RightArrow))
-                    {
-                            Vector2 position = this.transform.position;
-                            position.x++;
-                            this.transform.position = position;
-                    }
-                    if (Input.GetKey(KeyCode.UpArrow))
-                    {
-                            Vector2 position = this.transform.position;
-                            position.y++;
-                            this.transform.position = position;
-                    }
-                    if (Input.GetKey(KeyCode.DownArrow))
-                    {
-                            Vector2 position = this.transform.position;
-                            position.y--;
-                            this.transform.position = position;
+                                // if (Input.GetKey(KeyCode.RightArrow))
+                                // {
+                                //         Vector2 position = this.transform.position;
+                                //         position.x++;
+                                //         this.transform.position = position;
+                                // }
+                                // if (Input.GetKey(KeyCode.UpArrow))
+                                // {
+                                //         Vector2 position = this.transform.position;
+                                //         position.y++;
+                                //         this.transform.position = position;
+                                // }
+                                // if (Input.GetKey(KeyCode.DownArrow))
+                                // {
+                                //         Vector2 position = this.transform.position;
+                                //         position.y--;
+                                //         this.transform.position = position;
+                            
+                            
         }
    
    
     }
 
-}
+
 
