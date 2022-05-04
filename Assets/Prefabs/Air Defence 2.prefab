@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6063364108634729067}
   - component: {fileID: 6063364108634729066}
   - component: {fileID: 6063364108634729065}
+  - component: {fileID: -5470307809000765948}
   m_Layer: 0
   m_Name: Air Defence 2
   m_TagString: Untagged
@@ -133,3 +134,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.919404, y: 6.2220354}
   m_EdgeRadius: 0
+--- !u!114 &-5470307809000765948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6063364108634729064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77849492df7c9524db14e8b0ff13e482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patlamaPrefab: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
