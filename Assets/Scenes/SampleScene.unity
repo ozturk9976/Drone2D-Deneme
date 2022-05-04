@@ -705,9 +705,25 @@ PrefabInstance:
       propertyPath: Bomb1
       value: 
       objectReference: {fileID: 4808421632835907399, guid: 06ebf0c27ae26914886e0fa907052780, type: 3}
+    - target: {fileID: 2975474867128914839, guid: 3af141bead42c864d829a67974a62640, type: 3}
+      propertyPath: LaunchForce
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8841160766239609017, guid: 3af141bead42c864d829a67974a62640, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841160766239609017, guid: 3af141bead42c864d829a67974a62640, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.76135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841160766239609017, guid: 3af141bead42c864d829a67974a62640, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.76135
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841160766239609017, guid: 3af141bead42c864d829a67974a62640, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.76135
       objectReference: {fileID: 0}
     - target: {fileID: 8841160766239609017, guid: 3af141bead42c864d829a67974a62640, type: 3}
       propertyPath: m_LocalPosition.x

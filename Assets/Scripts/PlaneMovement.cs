@@ -7,7 +7,7 @@ public class PlaneMovement : MonoBehaviour
 {
    
     private Rigidbody2D rb;
-    const float hareketGucu = 110;
+    const float hareketGucu = 25;
     
     
     void Start()

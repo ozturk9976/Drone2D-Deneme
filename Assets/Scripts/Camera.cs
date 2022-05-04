@@ -15,7 +15,7 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector2(followTransform.position.x + 50, followTransform.position.y - 25);
+        this.transform.position = new Vector2(followTransform.position.x +55, followTransform.position.y -45);
         
         
     }
