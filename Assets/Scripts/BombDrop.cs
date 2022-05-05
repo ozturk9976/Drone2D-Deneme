@@ -8,12 +8,14 @@ public class BombDrop : MonoBehaviour
     public GameObject Bomb1;
 
    public float LaunchForce;
+   
     
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        
         
     }
 
@@ -37,7 +39,7 @@ public class BombDrop : MonoBehaviour
     }
     void dropBomb()
     {
-        GameObject Bomb = Instantiate(Bomb1,transform.position,transform.rotation);
+        GameObject Bomb = Instantiate(Bomb1,transform.position,transform.rotation);//(Bomb1,transform.position /(1*1/2),transform.rotation);
 
         Bomb.GetComponent<Rigidbody2D>().velocity = transform.right * LaunchForce;
     }
