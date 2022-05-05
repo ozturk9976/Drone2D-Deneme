@@ -18,8 +18,8 @@ public class Destroy : MonoBehaviour
         
     }
     private void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Player")
-        {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bomba1")
+        {            
             Destroy(gameObject); //eğer Destroy(collision.gameObject) yazılırsa diğer obje yokedilir
             Instantiate(patlamaPrefab1,gameObject.transform.position,Quaternion.identity);
         }
