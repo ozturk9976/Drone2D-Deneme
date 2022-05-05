@@ -42,21 +42,21 @@ public class PlaneMovement : MonoBehaviour
         //         Vector2 position = this.transform.position;
         //         position.y--;
         //         this.transform.position = position;
-        Vector3 position = transform.position; //şu anki konum
+            Vector3 position = transform.position; //şu anki konum
 
-    float yatayInput = Input.GetAxis("Horizontal");
-    float dikeyInput = Input.GetAxis("Vertical");
+            float yatayInput = Input.GetAxis("Horizontal");
+            float dikeyInput = Input.GetAxis("Vertical");
 
 
-    if (yatayInput !=0)
-    {
-        position.x += yatayInput * hareketGucu * Time.deltaTime;
-    }
-    if (dikeyInput !=0)
-    {
-        position.y += dikeyInput * hareketGucu * Time.deltaTime;
-    }
-    transform.position = position;
+            if (yatayInput !=0)
+            {
+                position.x += yatayInput * hareketGucu * Time.deltaTime;
+            }
+            if (dikeyInput !=0)
+            {
+                position.y += dikeyInput * hareketGucu * Time.deltaTime;
+            }
+            transform.position = position;
                             
                             
         }
