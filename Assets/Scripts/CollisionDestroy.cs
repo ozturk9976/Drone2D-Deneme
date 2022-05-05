@@ -17,7 +17,7 @@ public class CollisionDestroy : MonoBehaviour
         
     }
     private void OnCollisionEnter2D(Collision2D collision){
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy"|| collision.gameObject.tag =="Floor")
         {
             Destroy(gameObject); //eğer Destroy(collision.gameObject) yazılırsa diğer obje yokedilir
         }
