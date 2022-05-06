@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Patlama : MonoBehaviour
 {
-    [SerializeField]GameObject patlamaPrefab;
+    [SerializeField]
+    GameObject patlamaPrefab;
 
     CountdownTimer yokediciGeriSayim;
+
     // Start is called before the first frame update
     void Start()
     {
         yokediciGeriSayim = gameObject.AddComponent<CountdownTimer>();
-        yokediciGeriSayim.ToplamSure = Random.Range(1,20);
+        yokediciGeriSayim.ToplamSure = Random.Range(1, 20);
         yokediciGeriSayim.Calistir();
     }
 
@@ -20,9 +22,8 @@ public class Patlama : MonoBehaviour
     {
         if (yokediciGeriSayim.Bitti)
         {
-            Instantiate(patlamaPrefab,gameObject.transform.position,Quaternion.identity);
+            Instantiate(patlamaPrefab, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
-            
         }
     }
 }

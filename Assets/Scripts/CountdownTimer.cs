@@ -21,6 +21,7 @@ public class CountdownTimer : MonoBehaviour
             }
         }
     }
+
     // geri sayımın bitip bitmediğini söyler
     public bool Bitti
     {
@@ -29,8 +30,10 @@ public class CountdownTimer : MonoBehaviour
             return basladi && !calisiyor; //değer döneceği için return kullanılır //değer ataması olmadığı içn de get kullanılır
         }
     }
+
     /// sayacı çalıştırır
-    public void Calistir(){
+    public void Calistir()
+    {
         if (toplamSure > 0)
         {
             calisiyor = true;
@@ -39,16 +42,15 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
-     
     void Update()
     {
-        if(calisiyor)
+        if (calisiyor)
         {
-            gecenSure += Time.deltaTime; //deltatime çalışmadan itibaren geçen süre   
+            gecenSure += Time.deltaTime; //deltatime çalışmadan itibaren geçen süre
             if (gecenSure >= toplamSure)
             {
                 calisiyor = false;
-            } 
+            }
         }
     }
 }

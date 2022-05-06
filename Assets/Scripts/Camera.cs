@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-        public Transform followTransform;
-        
+    public Transform followTransform;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector2(followTransform.position.x +95, followTransform.position.y -35);
-        
-        
+        this.transform.position = new Vector2(
+            followTransform.position.x + 95,
+            followTransform.position.y - 35
+        );
     }
 }

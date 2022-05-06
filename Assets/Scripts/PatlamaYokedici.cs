@@ -5,6 +5,7 @@ using UnityEngine;
 public class PatlamaYokedici : MonoBehaviour
 {
     CountdownTimer geriSayimSayaci;
+
     //ekli olduğu objeyi 1sn de yok edecek
 
     void Start()
@@ -14,7 +15,6 @@ public class PatlamaYokedici : MonoBehaviour
         geriSayimSayaci.Calistir();
     }
 
-    
     void Update()
     {
         if (geriSayimSayaci.Bitti)

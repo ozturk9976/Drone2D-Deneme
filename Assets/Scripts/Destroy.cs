@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    [SerializeField]GameObject patlamaPrefab1;
+    [SerializeField]
+    GameObject patlamaPrefab1;
     Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,15 +15,14 @@ public class Destroy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() { }
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-    }
-    private void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bomba1")
-        {            
+        {
             Destroy(gameObject); //eğer Destroy(collision.gameObject) yazılırsa diğer obje yokedilir
-            Instantiate(patlamaPrefab1,gameObject.transform.position,Quaternion.identity);
+            Instantiate(patlamaPrefab1, gameObject.transform.position, Quaternion.identity);
         }
     }
 }
