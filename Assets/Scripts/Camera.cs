@@ -13,8 +13,8 @@ public class Camera : MonoBehaviour
     void FixedUpdate()
     {
         this.transform.position = new Vector2(
-            followTransform.position.x + 95,
-            followTransform.position.y - 35
+            followTransform.position.x + 75,
+            followTransform.position.y - 22
         );
     }
 }
